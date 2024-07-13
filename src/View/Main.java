@@ -4,6 +4,7 @@
  */
 package View;
 
+import Models.Agendamento;
 import Models.Cliente;
 import Models.Servico;
 import Models.Usuario;
@@ -17,9 +18,12 @@ public class Main {
     public static void main(String[] args){
 
         Cliente c1 = new Cliente("Anderon", 15, "Afonso", "41");
-        System.out.println(c1.getEndereço());
         
         Usuario u1 = new Usuario("Cata",12,"1234","2");
-        System.out.println(u1);
+        
+        Servico s1 = new Servico(1,"barba", 20);
+        
+        Agendamento a1 = new Agendamento(c1.getId(),c1,s1,s1.getValor(),"15/07/2024 09:00");
+        
     }
 }
