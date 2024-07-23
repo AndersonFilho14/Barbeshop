@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package Models;
+package Model;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -19,16 +19,16 @@ abstract public class Pessoa {
     protected int Id;
     protected String Sexo;
     protected Date dataNascimento;
-    protected int telefone;
+    protected String telefone;
     protected String email;
-    protected int rg;
+    protected String rg;
 
     public Pessoa(String Nome, int Id) {
         this.Nome = Nome;
         this.Id = Id;
     }
 
-    public Pessoa(String Nome, int Id, String Sexo, String dataNascimento, int telefone, String email, int rg) {
+    public Pessoa(String Nome, int Id, String Sexo, String dataNascimento, String telefone, String email, String rg) {
         this.Nome = Nome;
         this.Id = Id;
         this.Sexo = Sexo;
@@ -74,11 +74,11 @@ abstract public class Pessoa {
         this.dataNascimento = dataNascimento;
     }
 
-    public int getTelefone() {
+    public String getTelefone() {
         return telefone;
     }
 
-    public void setTelefone(int telefone) {
+    public void setTelefone(String telefone) {
         this.telefone = telefone;
     }
 
@@ -90,11 +90,11 @@ abstract public class Pessoa {
         this.email = email;
     }
 
-    public int getRg() {
+    public String getRg() {
         return rg;
     }
 
-    public void setRg(int rg) {
+    public void setRg(String rg) {
         this.rg = rg;
     }
     

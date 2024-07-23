@@ -4,10 +4,10 @@
  */
 package View;
 
-import Models.Agendamento;
-import Models.Cliente;
-import Models.Servico;
-import Models.Usuario;
+import Model.Agendamento;
+import Model.Cliente;
+import Model.Servico;
+import Model.Usuario;
 
 
 /**
