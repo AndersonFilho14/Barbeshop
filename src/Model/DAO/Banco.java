@@ -24,13 +24,13 @@ public class Banco {
     public static ArrayList<Agendamento> agendamento;
     
     
-    public static void inicia() throws ParseException{
+    public static void inicia(){
     
         //Instancia os Objetos
-        usuario = new ArrayList<>();
-        cliente = new ArrayList<>();
-        servico = new ArrayList<>();
-        agendamento = new ArrayList<>();
+        usuario = new ArrayList<Usuario>();
+        cliente = new ArrayList<Cliente>();
+        servico = new ArrayList<Servico>();
+        agendamento = new ArrayList<Agendamento>();
         
         //criando elementos
         Usuario su = new Usuario(2, "as", "as", "18/07/1990", "a", "asd","a", "senha", "nivelAcesso");
