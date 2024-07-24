@@ -19,11 +19,11 @@ public class Main {
 
         Cliente c1 = new Cliente("Anderon", 15, "Afonso", "41");
         
-        Usuario u1 = new Usuario("Cata",12,"1234","2");
+        Usuario u1 = new Usuario(0, "ANderson", "senha", "A");
         
         Servico s1 = new Servico(1,"barba", 20);
         
-        Agendamento a1 = new Agendamento(c1.getId(),c1,s1,s1.getValor(),"15/07/2024 09:00");
+        Agendamento a1 = new Agendamento(1, c1, s1, 15 , "16");
         
     }
 }
